@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Weather API</title>
+</head>
+<body>
+    <!-- form 1, displays current weather in a given city/country or zipcode/country -->
+    <form>  
+        <fieldset> 
+            <legend>Current Weather</legend><br />
+            <label>Search by city and country code:</label><br />  
+            <input type="text" name="city" id="cityInput" placeholder="city" size="30" maxlength="100">
+            <input type="text" name="countryCode" id="countryInput" placeholder="country code" size="30" maxlength="100">
+            <input type="submit" id="citySubmit"><br />
+            <br />
+            <label>Search by zipcode and country code:</label><br />
+            <input type="text" name="zipcode" id="zipInput" placeholder="zipcode" size="30" maxlength="100">
+            <input type="text" name="countryCode" id="countryInput2" placeholder="country code" size="30" maxlength="100">
+            <input type="submit" id="zipcodeSubmit">
+
+            <div>
+                <h2>
+                    <span>The current weather is: </span>
+                    <span id="weatherResults"></span>
+                    <span>(degrees in fahrenheit)</span>
+                </h2>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+<script src="scripts.js"></script>
+</html>
